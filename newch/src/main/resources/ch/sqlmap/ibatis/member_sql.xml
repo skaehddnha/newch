@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="member">
+	<select id="selectMember" resultClass="MemberVO">
+		/* member.selecetMember - 아이디, 비번 가져오기 */
+		Select id 			AS id  /* 아이디 */
+			  ,password 	AS password /* 비밀번호 */
+		From member
+	</select>
+</sqlMap>
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
