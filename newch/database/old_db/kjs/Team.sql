@@ -1,22 +1,22 @@
 team_no는 추후 시퀀스로
 
-CREATE table team(
-team_no number(4) primary key,
-team_name varchar2(30),
-director_id varchar2(30),
-found_date varchar2(10),
-tel varchar2(30),
-email varchar2(50),
-prefer_ground varchar2(40),
-prefer_time varchar2(30),
-membership_fee number(10),
-join_condition varchar2(3000),
-orgprofilephoto varchar2(100),
-newprofilephoto varchar2(100),
-context varchar2(3000),
-statement number(1),
-point number(10),
-join_date date
+CREATE TABLE TEAM(
+TEAM_NO NUMBER(4) PRIMARY KEY,
+TEAM_NAME VARCHAR2(30),
+DIRECTOR_ID VARCHAR2(30),
+FOUND_DATE VARCHAR2(10),
+TEL VARCHAR2(30),
+EMAIL VARCHAR2(50),
+PREFER_GROUND VARCHAR2(40),
+PREFER_TIME VARCHAR2(30),
+MEMBERSHIP_FEE NUMBER(10),
+JOIN_CONDITION VARCHAR2(3000),
+ORGPROFILEPHOTO VARCHAR2(100),
+NEWPROFILEPHOTO VARCHAR2(100),
+CONTEXT VARCHAR2(3000),
+STATEMENT NUMBER(1),
+POINT NUMBER(10),
+JOIN_DATE DATE
 );
 
 CREATE sequence team_seq;
