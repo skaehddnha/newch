@@ -1,0 +1,28 @@
+CREATE table member (
+id varchar2(30) primary key, 
+password varchar2(14) not null,
+name varchar2(14) not null,
+nickName varchar2(14),
+gender number(5) not null,
+birth varchar2(15) not null,
+tel varchar2(14) not null,
+email varchar2(50) not null,
+address	varchar2(300) not null,
+infoRange number(5) not null,
+orgprofilephoto varchar2(40),
+newprofilephoto	varchar2(40),
+height varchar2(10),
+weight varchar2(10),
+favorAddr1 varchar2(300),
+favorAddr2 varchar2(300),
+favorAddr3 varchar2(300),
+position number(1),
+context varchar2(3000),
+statement number(1),
+point number(10),
+team_no number(5),	
+attend_cnt number(5),
+join_request_cnt number(5),
+joinDate date not null);
+
+drop table member purge;
