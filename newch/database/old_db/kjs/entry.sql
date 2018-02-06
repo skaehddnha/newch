@@ -1,8 +1,8 @@
-CREATE table match_entry (
-play_no varchar2(100) not null,
-team_no number(5) not null, 
-player_id varchar2(30) not null,
-player_position varchar2(30),
-player_state varchar2(30)
+CREATE TABLE MATCH_ENTRY (
+	PLAY_NO VARCHAR2(100) NOT NULL,
+	TEAM_NO NUMBER(5) NOT NULL, 
+	PLAYER_ID VARCHAR2(30) NOT NULL,
+	PLAYER_POSITION VARCHAR2(30),
+	PLAYER_STATE VARCHAR2(30)
 );
 

@@ -1,14 +1,14 @@
-create table match_record(
-play_no varchar2(100) not null,
-r_play_state number(3) not null,
-ed_play_state number(3) not null,
-play_Date date,
-play_place varchar2(100),
-judge varchar2(14),
-request_Team_no number(5) not null, 
-r_Team_Director varchar2(30), 
-r_Team_scorer varchar2(30), 
-ed_Team_no number(5) not null, 
-ed_Team_Director varchar2(30), 
-ed_Team_scorer varchar2(30)
+CREATE TABLE MATCH_RECORD(
+	PLAY_NO VARCHAR2(100) NOT NULL,
+	R_PLAY_STATE NUMBER(3) NOT NULL,
+	ED_PLAY_STATE NUMBER(3) NOT NULL,
+	PLAY_DATE DATE,
+	PLAY_PLACE VARCHAR2(100),
+	JUDGE VARCHAR2(14),
+	REQUEST_TEAM_NO NUMBER(5) NOT NULL, 
+	R_TEAM_DIRECTOR VARCHAR2(30), 
+	R_TEAM_SCORER VARCHAR2(30), 
+	ED_TEAM_NO NUMBER(5) NOT NULL, 
+	ED_TEAM_DIRECTOR VARCHAR2(30), 
+	ED_TEAM_SCORER VARCHAR2(30)
 );
