@@ -1,21 +1,22 @@
-create table player_record(
-id varchar2(14) not null,
-playno varchar2(30) not null,
-playDate date not null,
-playTeam varchar2(30) not null,
-opposingTeam varchar2(30) not null,
-success2p number(5),
-try2p number(5),
-success3p number(5),
-try3p number(5),
-success1p number(5),
-try1p number(5),
-rebound number(5),
-assist number(5),
-blocking number(5),
-steal number(5),
-foul number(5),
-mannerPoint number(5));
+CREATE TABLE PLAYER_RECORD(
+	ID VARCHAR2(14) NOT NULL,
+	PLAYNO VARCHAR2(30) NOT NULL,
+	PLAYDATE DATE NOT NULL,
+	PLAYTEAM VARCHAR2(30) NOT NULL,
+	OPPOSINGTEAM VARCHAR2(30) NOT NULL,
+	SUCCESS2P NUMBER(5),
+	TRY2P NUMBER(5),
+	SUCCESS3P NUMBER(5),
+	TRY3P NUMBER(5),
+	SUCCESS1P NUMBER(5),
+	TRY1P NUMBER(5),
+	REBOUND NUMBER(5),
+	ASSIST NUMBER(5),
+	BLOCKING NUMBER(5),
+	STEAL NUMBER(5),
+	FOUL NUMBER(5),
+	MANNERPOINT NUMBER(5)
+);
 
 insert into player_record (
 id,playNo,playDate,playTeam,opposingTeam,success2p,try2p,success3p,try3p,success1p,try1p,rebound,assist,blocking,steal,foul,mannerPoint)
@@ -66,5 +67,3 @@ SELECT
 	)
 	GROUP BY success2p, try2p, success3p, try3p, success1p, try1p,
 	rebound, assist, blocking, steal, foul, mannerPoint, avgRebound, avgAssist, avgBlocking, avgSteal, avgFoul
-/
-
