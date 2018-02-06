@@ -1,0 +1,104 @@
+/* 페이징 관련 */
+#rply_area{
+	width: 100%;
+	/* background-color: yellow; */
+	text-align: center;
+	margin-top: 5px;
+	border-top: 1px solid #d2d2d2;
+	padding-top: 5px;
+}
+#rply_area .comment{
+	width: 80%;
+	height: 28px;
+}
+#rply_area .submit{
+    text-decoration: none;
+    color: white;
+    background: gray;
+    height: 28px;
+    width: 8%;
+    display: inline-block;
+    margin-left: 5px;
+}
+.mreply_area{
+	width:100%;
+	text-align: left;
+    padding: 5px;
+}
+.mreply_wrt_area{
+	width:10%;
+    padding: 10px;
+    color: gray;
+    font-size: 14px;
+	display: inline-block;
+}
+.mreply_cnt_area{
+	width:75%;
+	display: inline-block;
+}
+.mreply_btn_area{
+	width:10%;
+	display: inline-block;
+}
+.pagingArea{
+	width:20px;
+	display: inline-block;
+}
+
+
+
+/* 레터 관련 */
+#bgletter{
+	background-image: url("../img/letterLogo.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50% (center top);
+}
+.bar_menu{
+	background-image: url("../img/bar_chu.png");
+	background-repeat: no-repeat; 
+	color: #fff;
+	width: 300px;
+	height: 20px;
+	text-align: left;
+	font-size: 18px;
+	padding-top: 1px;
+	padding-left: 20px;
+}
+
+/* 페이지 관련 */
+.pageArea{
+	text-align: center;
+}
+.pageArea .paging{
+	display: inline-block;
+	margin: 3px;
+}
+
+
+
+.btn_area a{
+    text-decoration: none;
+    color: white;
+    background: gray;
+    display: inline-block;
+    width: 80px;
+    height: 29px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px;
+    margin: 10px;
+    line-height: 2;
+}
+.bar_menu{
+	background: red;
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    width: 200px;
+    height: 19px;
+    margin-bottom: 8px;
+    border-radius: 7px;
+}
+.datalist{
+	cursor: pointer;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/defualt.css">
+<style>
+    .choo .header{
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+    }
+    .choo .header .header_left{
+        width: 40%;
+        height: 100%;
+        float: left;
+        text-align: center;
+    }
+    .choo .header .header_right{
+        width: 60%;
+        height: 100%;
+        float: left;
+    }
+    .choo .header .header_right .user_info{
+        width: 100%;
+        height: 30%;
+        text-align: center;
+    }
+    .choo .header .header_right .user_info ul{
+        margin-left: 10px;
+        line-height: 25px;
+        display: inline-block;
+        
+    }
+    .choo .header .header_right .user_info ul li{
+        float: left;
+        margin-left: 5px;
+    }
+    .choo .header .header_right .menu{
+        width: 100%;
+        height: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+    }
+    .choo .header .header_right .menu span{
+        display: inline-block;
+        background-color: #004479;
+        width: 632px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .choo .header .header_right .menu ul{
+        margin-left: 20px;
+        
+    }
+    .choo .header .header_right .menu ul li{
+        float: left;
+        width: 20%;
+        
+    }
+    .choo .header .header_right .menu ul li h1{
+        color: #FFBB00;
+    }
+    .choo .header .header_right .menu ul li a{
+        color: white;
+    }
+    .choo .header .header_right .menu ul li a:hover{
+        color: #FFBB00;
+    }
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$(function(){
+    $("#menuArea").hover(function(){
+        $(this).find("span").show();
+    }, function(){
+        $(this).find("span").hide();
+    });
+});
+</script>
+</head>
+<body>
+<div class="choo">
+    <!-- header 시작 -->
+    <div class="header">
+        <div class="header_left"><img src="img/menu/chulogoL.png" alt="" /></div>
+        <div class="header_right">
+            <div class="user_info">
+                <ul>
+                    <li><input type="text" placeholder="ID" /></li>
+                    <li><input type="password" placeholder="PASSWORD" /></li>
+                    <li><a href><img src="img/menu/memberState.png" alt="회원" />김준성</a></li>
+                    <li><a href><img src="img/menu/requestTeam.png" alt="스카웃" />0</a></li>
+                    <li><a href><img src="img/menu/letter2.png" />0</a></li>
+                    <li><a href><img src="img/menu/chulogin.png" alt="login" /></a></li>
+                    <li><a href><img src="img/menu/chuJoin.png" alt="login" /></a></li>
+                </ul>
+            </div>
+            <div class="menu" id="menuArea">
+                <img src="img/menu/main_menu.png" />
+                <span style="display:none;">
+                    <ul>
+                        <li>
+                            <h1>HOME</h1>
+                            <a href="javascript:board('introChu')">츄리닝 소개</a><br>
+                            <a href="javascript:board('howUse')">사이트 이용방법</a><br>
+                            <a href="javascript:cafe('home')">까페 홈</a><br>
+                            <a href="javascript:cafe('my')">내 팀까페</a><br>
+                            <a href="javascript:cafe('home')">팀 만들기</a><br>
+                            <a href="javascript:cafe('home')">팀 가입하기</a>
+                        </li>
+                        <li>
+                            <h1>게시판</h1>
+                            <a href="javascript:board('notice')">공지사항</a><br>
+                            <a href="javascript:board('qna')">Q&A</a><br>
+                            <a href="javascript:board('free')">자유게시판</a><br>
+                            <a href="javascript:board('groundInfo')">운동장 정보</a>
+                        </li>
+                        <li>
+                            <h1>게임한판</h1>
+                            <a href="javascript:jumpball('matchFree')">번개모집</a><br>
+                            <a href="javascript:jumpball('requestMatch')">경기신청</a><br>
+                        </li>
+                        <li>
+                            <h1>기록보기</h1>
+                            <a href="javascript:record('myRecord')">내 기록</a><br>
+                            <a href="javascript:record('myTeamRecord')">나의팀 기록</a><br>
+                            <a href="javascript:record('compareRecord')">기록 비교하기</a><br>
+                            <a href="javascript:record('playerRanking')">선수랭킹보기</a><br>
+                            <a href="javascript:record('teamRanking')">팀 랭킹보기</a>
+                        </li>
+                        <li>
+                            <h1>둘러보기</h1>
+                            <a href="javascript:search('searchMember')">회원 둘러보기</a><br>
+                            <a href="javascript:cafe('home')">팀 둘러보기</a><br><br><br>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- header 끝 -->
+    <!-- body -->
+    <div class="body">
+        
+    </div>
+    <!-- body 끝 -->
+    <!-- footer 시작 -->
+    <div class="footer">
+        <hr width="85%">
+    </div>
+    <!-- footer 끝 -->
+</div>
+<!--
+<div id="myMenu" style="background-color: #e1e1e1">
+    <table class="tableType" style="max-width: 100px; border-left: solid 2px #004479 ">
+        <tr>
+            <td><a href="#">쪽지보내기</a></td>
+        </tr>
+        <tr>
+            <td><a href="javascript:my('myInfo')">내정보</a></td>
+        </tr>
+        <tr>
+            <td><a href="javascript:cafe('my','${sessionScope.mvo.team.teamNo }')">팀까페 방문</a></td>
+        </tr>
+    </table>
+</div>
+-->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
