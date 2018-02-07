@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div class="header_left"><img src="/img/menu/chulogoL.png" alt="" /></div>
+<div class="header_left"><a href="/"><img src="/img/menu/chulogoL.png" alt="홈으로" /></a></div>
 <div class="header_right">
 	<div class="user_info">
 		<ul>
@@ -27,7 +27,7 @@
 				</li>
 				<li>
 					<h1>게시판</h1>
-					<a href="javascript:board('notice')">공지사항</a><br>
+					<a href="/board/showNotice.do">공지사항</a><br>
 					<a href="javascript:board('qna')">Q&A</a><br>
 					<a href="javascript:board('free')">자유게시판</a><br>
 					<a href="javascript:board('groundInfo')">운동장 정보</a>
