@@ -54,7 +54,11 @@ $(function() {
 				<td colspan="4">
 					<select>
 						<option>=선택=</option>
-						<option>010</option>
+						
+						<c:forEach items="${telList}" var="obj" varStatus="idx">
+							<option>${obj}</option>
+						</c:forEach>
+						
 					</select>
 					<input type="number" name="Mtel" pattern="[0-9]*" inputmode="numeric" min = "0" maxlength="4" oninput=""/> - 
 					<input type="number" name="Btel" pattern="[0-9]*" inputmode="numeric" min = "0" maxlength="4" oninput=""/>
