@@ -3,16 +3,24 @@
 $(function() {
     $("#date_pick").datepicker({
     	changeMonth: true,
-    	dateFormat: "yy-mm-dd",
-    	dayNames: ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일'],
-    	dayNmaesMin: ['월', '화', '수', '목', '금', '토', '일'],
-    	monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
-    	monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+    	changeYear: true,
+    	yearRange: 'c-100:c+0',
+    	monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
     });
 });
+function goPopup(){
+    // 주소검색을 수행할 팝업 페이지를 호출합니다.
+    // 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(http://www.juso.go.kr/addrlink/addrLinkUrl.do)를 호출하게 됩니다.
+    var pop = window.open("/popup/common/jusoPopup.do","pop","width=570,height=420, scrollbars=yes, resizable=yes"); 
+    // 모바일 웹인 경우, 호출된 페이지(jusopopup.jsp)에서 실제 주소검색URL(http://www.juso.go.kr/addrlink/addrMobileLinkUrl.do)를 호출하게 됩니다.
+     //var pop = window.open("/popup/jusoPopup.jsp","pop","scrollbars=yes, resizable=yes"); 
+	}
+function invalid_check(){
+	alert("hh");
+}
 </script>
 <div class="register">
-	<form action="" enctype="multipart/form-data">
+	<form action="" id="f_register" name="f_register" onsubmit="invalid_check()" enctype="multipart/form-data">
 	<div>
 		<div class="bar_menu">회원가입</div>
 	</div>
@@ -84,7 +92,8 @@ $(function() {
 			<tr>
 				<th>*주소</th>
 				<td colspan="4">
-					
+					<input type="text" style="width:350px;" id="addr"  name="addr" readonly="readonly" >
+					<input type="button"  value="주소검색" onClick="goPopup()">	
 				</td>
 			</tr>
 			<tr>
