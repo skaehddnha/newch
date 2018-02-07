@@ -21,6 +21,14 @@ public class CommonController {
 	public String main() {
 		return "main/main";
 	}
+	
+	@RequestMapping(value="/popup/common/jusoPopup.do")
+	public String jusoPopup() {
+		return "popup/common/jusoPopup";
+	}
+	
+	
+	
 	/**
 	 * 세션값을 확인하는 메서드.
 	 * @param req

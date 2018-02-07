@@ -8,8 +8,8 @@
 			<li><a href><img src="/img/menu/memberState.png" alt="회원" />김준성</a></li>
 			<li><a href><img src="/img/menu/requestTeam.png" alt="스카웃" />0</a></li>
 			<li><a href><img src="/img/menu/letter2.png" />0</a></li>
-			<li><a href><img src="/img/menu/chulogin.png" alt="login" /></a></li>
-			<li><a href><img src="/img/menu/chuJoin.png" alt="login" /></a></li>
+			<li><a href><img src="/img/menu/chulogin.png" alt="로그인" /></a></li>
+			<li><a href="/member/registerMember.do"><img src="/img/menu/chuJoin.png" alt="회원가입" /></a></li>
 		</ul>
 	</div>
 	<div class="menu" id="menuArea">
