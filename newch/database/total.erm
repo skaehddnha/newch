@@ -11,8 +11,8 @@
 	</page_setting>
 	<category_index>0</category_index>
 	<zoom>0.75</zoom>
-	<x>6</x>
-	<y>575</y>
+	<x>501</x>
+	<y>0</y>
 	<default_color>
 		<r>128</r>
 		<g>128</g>
@@ -89,10 +89,10 @@
 				<is_open_after_saved>true</is_open_after_saved>
 			</export_html_setting>
 			<export_image_setting>
-				<output_file_path></output_file_path>
+				<output_file_path>C:\Users\DW\Desktop\total.png</output_file_path>
 				<category_dir_path></category_dir_path>
-				<with_category_image>true</with_category_image>
-				<is_open_after_saved>true</is_open_after_saved>
+				<with_category_image>false</with_category_image>
+				<is_open_after_saved>false</is_open_after_saved>
 			</export_image_setting>
 			<export_java_setting>
 				<java_output></java_output>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2018-02-05 21:35:46</creation_date>
-			<updated_date>2018-02-06 20:56:27</updated_date>
+			<updated_date>2018-02-06 21:16:49</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
@@ -3725,7 +3725,7 @@
 			<connections>
 				<relation>
 					<id>1</id>
-					<source>11</source>
+					<source>10</source>
 					<target>1</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -3747,7 +3747,7 @@
 				</relation>
 				<relation>
 					<id>2</id>
-					<source>10</source>
+					<source>11</source>
 					<target>1</target>
 						<source_xp>-1</source_xp>
 						<source_yp>-1</source_yp>
@@ -4306,7 +4306,7 @@
 				<normal_column>
 					<id>43</id>
 					<referenced_column>145</referenced_column>
-					<relation>1</relation>
+					<relation>2</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
@@ -4340,7 +4340,7 @@
 				<normal_column>
 					<id>44</id>
 					<referenced_column>130</referenced_column>
-					<relation>2</relation>
+					<relation>1</relation>
 					<description></description>
 					<unique_key_name></unique_key_name>
 					<logical_name></logical_name>
