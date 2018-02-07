@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="team">
+
+	<select id="selectTeamList" resultClass="teamVO">
+		/* team.selectTeamList - 팀 리스트 가져오기. */
+		SELECT CH_TEAM_SEQ
+			 , NO
+			 , NAME
+			 , PRFR_GRND
+			 , PRFR_TIME
+			 , FEE
+			 , CNDTION
+			 , ORG_PHOTO
+			 , NEW_PHOTO
+			 , COMMENT
+			 , FND_DATE
+			 , WRT_DATE
+			 , UPD_DATE
+			 , DEL_YN
+		  FROM CH_TEAM
+	</select>
+	
+	<select id="selectTeam" resultClass="teamVO">
+		/* team.selectTeam - 팀 상세. */
+		SELECT CH_TEAM_SEQ
+			 , NO
+			 , NAME
+			 , PRFR_GRND
+			 , PRFR_TIME
+			 , FEE
+			 , CNDTION
+			 , ORG_PHOTO
+			 , NEW_PHOTO
+			 , COMMENT
+			 , FND_DATE
+			 , WRT_DATE
+			 , UPD_DATE
+			 , DEL_YN
+		  FROM CH_TEAM
+		WHERE CH_TEAM_SEQ = #chTeamSeq#
+	</select>
+	
+	<insert id="insertTeam">
+		/* team.insertTeam - 팀등록. */
+		INSERT INTO CH_TEAM
+		( CH_TEAM_SEQ
+		, NO
+		, NAME
+		, PRFR_GRND
+		, PRFR_TIME
+		, FEE
+		, CNDTION
+		, ORG_PHOTO
+		, NEW_PHOTO
+		, COMMENT
+		, FND_DATE
+		, WRT_DATE
+		, UPD_DATE
+		, DEL_YN
+		) VALUES
+		( (SELECT NVL(MAX(CH_TEAM_SEQ)+1, 1) FROM CH_TEAM)
+		, (SELECT NVL(MAX(NO)+1, 1) FROM CH_TEAM)
+		, #name#
+		, #prfrGrnd#
+		, #prfrTime#
+		, #fee#
+		, #cndtion#
+		, #orgPhoto#
+		, #newPhoto#
+		, #comment#
+		, SYSDATE
+		, SYSDATE
+		, SYSDATE
+		, 'Y'
+		)
+	</insert>
+	
+	<update id="updateTeam">
+		/* team.updateTeam - 팀수정. */
+		UPDATE CH_TEAM
+		   SET NAME			= #name#
+		     , PRFR_GRND	= #prfrGrnd#
+		     , PRFR_TIME	= #prfrTime#
+		     , FEE			= #fee#
+		     , CNDTION		= #cndtion#
+		     , ORG_PHOTO	= #orgPhoto#
+		     , NEW_PHOTO	= #newPhoto#
+		     , COMMENT		= #comment#
+		     , FND_DATE		= SYSDATE
+		     , WRT_DATE		= SYSDATE
+		     , UPD_DATE		= SYSDATE
+		     , DEL_YN		= #delYn#
+		 WHERE CH_TEAM_SEQ	= #chTeamSeq#
+	</update>
+	
+</sqlMap>
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	

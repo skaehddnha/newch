@@ -2,9 +2,14 @@
 <!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN" "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
 <sqlMapConfig>	
 	<settings useStatementNamespaces="true" />
+	
 	<typeAlias alias="memberVO" type="com.dev.ch.member.MemberVO"/>	
+	<typeAlias alias="teamVO" type="com.dev.ch.team.TeamVO"/>	
 	<typeAlias alias="map" type="java.util.Map"/>	
+	
 	<sqlMap resource="ch/sqlmap/ibatis/member_sql.xml"/>
+	<sqlMap resource="ch/sqlmap/ibatis/team_sql.xml"/>
+	
 </sqlMapConfig>
 
 

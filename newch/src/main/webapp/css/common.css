@@ -1,0 +1,68 @@
+.choo .header{
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+}
+.choo .header .header_left{
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.choo .header .header_right{
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+.choo .header .header_right .user_info{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+.choo .header .header_right .user_info ul{
+	margin-left: 10px;
+	line-height: 25px;
+	display: inline-block;
+}
+.choo .header .header_right .user_info ul li{
+	float: left;
+	margin-left: 5px;
+}
+.choo .header .header_right .menu{
+	width: 100%;
+	height: 70%;
+	margin-left: 4%;
+	margin-top: 3%;
+}
+.choo .header .header_right .menu span{
+	display: inline-block;
+	background-color: #004479;
+	width: 632px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.choo .header .header_right .menu ul{
+	margin-left: 20px;
+}
+.choo .header .header_right .menu ul li{
+	float: left;
+	width: 20%;
+}
+.choo .header .header_right .menu ul li h1{
+	color: #FFBB00;
+}
+.choo .header .header_right .menu ul li a{
+	color: white;
+}
+.choo .header .header_right .menu ul li a:hover{
+	color: #FFBB00;
+}
+
+.choo .body{
+	text-align: center;
+}
+
+
+.choo .footer{
+	text-align: center;
+}

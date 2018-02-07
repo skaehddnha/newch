@@ -61,4 +61,13 @@
 	<!-- 예외처리 페이지 -->
 	<!-- <error-page> <exception-type>java.lang.Exception</exception-type> <location>/index.jsp</location> 
 		</error-page> -->
+		
+		
+	<!-- 페이지 상단 공통 -->
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/common/cmmn.jspf</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
 </web-app>
