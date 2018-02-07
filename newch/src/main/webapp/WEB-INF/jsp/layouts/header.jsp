@@ -1,19 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<div class="header_left"><img src="img/menu/chulogoL.png" alt="" /></div>
+<div class="header_left"><img src="/img/menu/chulogoL.png" alt="" /></div>
 <div class="header_right">
 	<div class="user_info">
 		<ul>
 			<li><input type="text" placeholder="ID" /></li>
 			<li><input type="password" placeholder="PASSWORD" /></li>
-			<li><a href><img src="img/menu/memberState.png" alt="회원" />김준성</a></li>
-			<li><a href><img src="img/menu/requestTeam.png" alt="스카웃" />0</a></li>
-			<li><a href><img src="img/menu/letter2.png" />0</a></li>
-			<li><a href><img src="img/menu/chulogin.png" alt="login" /></a></li>
-			<li><a href><img src="img/menu/chuJoin.png" alt="login" /></a></li>
+			<li><a href><img src="/img/menu/memberState.png" alt="회원" />김준성</a></li>
+			<li><a href><img src="/img/menu/requestTeam.png" alt="스카웃" />0</a></li>
+			<li><a href><img src="/img/menu/letter2.png" />0</a></li>
+			<li><a href><img src="/img/menu/chulogin.png" alt="login" /></a></li>
+			<li><a href><img src="/img/menu/chuJoin.png" alt="login" /></a></li>
 		</ul>
 	</div>
 	<div class="menu" id="menuArea">
-		<img src="img/menu/main_menu.png" />
+		<img src="/img/menu/main_menu.png" />
 		<span style="display:none;">
 		    <ul>
 				<li>

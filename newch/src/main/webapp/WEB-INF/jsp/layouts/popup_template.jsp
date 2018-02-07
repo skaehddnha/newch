@@ -10,9 +10,11 @@
 	<!-- 공통 스타일 -->
 	<link rel="stylesheet" type="text/css" href="/css/default.css">
 	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css">
 	
 	<!-- 공통 스크립트 -->
-	<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="/js/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui-1.12.1.js"></script>
 	
 </head>
 <body class="choo">

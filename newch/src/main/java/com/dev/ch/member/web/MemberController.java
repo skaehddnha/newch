@@ -25,4 +25,12 @@ public class MemberController {
 		model.addAttribute("list",list);
 		return "member/list";
 	}
+	
+	@RequestMapping(value="/member/registerMember.do")
+	public String registerMember(){
+		
+		
+		
+		return "member/register";
+	}
 }

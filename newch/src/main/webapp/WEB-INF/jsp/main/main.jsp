@@ -1,37 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-
-<style>
-.choo .body .lv_1{
-	display: inline-block;
-	height: 200px;
-	width: 85%;
-	margin-top: 5%;
-}
-
-.choo .body .lv_1 div{
-	float: left;
-}
-
-.choo .body .lv_1 div img{
-	width: 100%;
-	padding: 2px;
-}
-
-.choo .body .lv_1 .left{
-	text-align: left;
-	width: 30%;
-}
-.choo .body .lv_1 .center{
-	text-align: center;
-	width: 40%;
-}
-.choo .body .lv_1 .right{
-	text-align: right;
-	width: 30%;
-}
-
-</style>
-
 <div class="lv_1">
 	<div class="left">
 		<img src="/img/main/bar_adTeam.png" alt="" />
