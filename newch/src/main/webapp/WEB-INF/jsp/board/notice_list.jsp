@@ -17,13 +17,37 @@
 }
 
 .paging{
-	
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .paging ul{
-	
+	display: inline-block;
 }
 .paging ul li{
+	float: left;
+	padding: 5px;
+	border: 1px solid #EAEAEA;
+	margin-left: 1px;
+	margin-right: 1px;
+	/* background-color: #004479; */
+	color: #000000;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
+}
+.btn_area{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	
+}
+.btn_area .btn{
+	border: 1px solid #EAEAEA;
+	color: #000000;
+	width: 35px;
+	height: 35px;
+	overflow: hidden;
 }
 </style>
 <div class="board">
@@ -60,21 +84,21 @@
 				</tr>
 			</tbody>
 		</table>
-		<a href="/board/notice/showWrite.do">
-			<img alt="글쓰기" src="/img/write_btn.jpg" border="0">
-		</a>
+	</div>
+	<div class="btn_area">
+		<a href="" class="btn">글쓰기</a>
 	</div>
 </div>
 <div class="paging">	 
 	<ul>
-		<li>맨처음</li>
-		<li>이전</li>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>다음</li>
-		<li>마지막</li>
+		<li><a href="">F</a></li>
+		<li><a href="">P</a></li>
+		<li><a href="">1</a></li>
+		<li><a href="">2</a></li>
+		<li><a href="">3</a></li>
+		<li><a href="">4</a></li>
+		<li><a href="">5</a></li>
+		<li><a href="">N</a></li>
+		<li><a href="">L</a></li>
 	</ul>
 </div>
